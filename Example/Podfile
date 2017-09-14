@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ButtonHitExtension_Example' do
+  pod 'ButtonHitExtension', :path => '../'
+
+  target 'ButtonHitExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
