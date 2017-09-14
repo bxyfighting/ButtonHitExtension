@@ -1,0 +1,16 @@
+PODS:
+  - ButtonHitExtension (0.1.0)
+
+DEPENDENCIES:
+  - ButtonHitExtension (from `../`)
+
+EXTERNAL SOURCES:
+  ButtonHitExtension:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ButtonHitExtension: f9742474ba6a636071c0be63da5dda0d8215054a
+
+PODFILE CHECKSUM: a059548db42bd9d0de63b8860f90463c381c6432
+
+COCOAPODS: 1.3.1

@@ -17,13 +17,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *hitExtensionButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    hitExtensionButton.frame = CGRectMake((self.view.frame.size.width - 20) / 2.0, 300, 20, 20);
+    [hitExtensionButton setImage:[UIImage imageNamed:@"search_icon"] forState:UIControlStateNormal];
+    [hitExtensionButton addTarget:self action:@selector(hitExtensionClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:hitExtensionButton];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - event response
+    
+- (void)hitExtensionClicked:(UIButton *)button {
+    
 }
 
 @end
